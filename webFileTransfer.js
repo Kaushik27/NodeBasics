@@ -1,6 +1,7 @@
 var http=require('http');
 var fs=require('fs');
 
+
 // 404 response
 function send404Response(response){
     console.log("bad request");
@@ -8,6 +9,7 @@ function send404Response(response){
     response.write("this request cant not be served");
     response.end();
 }
+
 
 // handle  user request
 function onRequest(request,response){
